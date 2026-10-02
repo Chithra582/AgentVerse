@@ -1,0 +1,26 @@
+name: "memory-buffer-manager"
+description: "Manages agent memory buffers, semantic retrieval, reflection synthesis, and history compression."
+input_schema:
+  type: object
+  properties:
+    action:
+      type: string
+      enum:
+        - "append"
+        - "retrieve"
+        - "compress"
+        - "reflect"
+      description: "Memory manipulation action to perform."
+    agent_id:
+      type: string
+      description: "Target agent whose memory is being modified or queried."
+    memory_entry:
+      type: string
+      description: "Observation, message, or reflection text to record or query."
+    top_k:
+      type: integer
+      description: "Number of semantically relevant memories to retrieve."
+      default: 5
+  required:
+    - action
+    - agent_id

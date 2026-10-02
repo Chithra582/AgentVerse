@@ -1,0 +1,21 @@
+name: "environment-step-runner"
+description: "Advances simulation ticks, updates environmental state, and gathers agent observations."
+input_schema:
+  type: object
+  properties:
+    action:
+      type: string
+      enum:
+        - "step"
+        - "reset"
+        - "get_state"
+      description: "Simulation environment action."
+    step_count:
+      type: integer
+      description: "Number of environment ticks to advance."
+      default: 1
+    environment_id:
+      type: string
+      description: "Unique identifier of the active simulation environment."
+  required:
+    - action

@@ -1,0 +1,13 @@
+name: "simulation-scenario-loader"
+description: "Loads, parses, and validates benchmark simulation scenarios and multi-agent presets from YAML files."
+input_schema:
+  type: object
+  properties:
+    scenario_name:
+      type: string
+      description: "Name or relative path of the simulation scenario preset."
+    override_parameters:
+      type: object
+      description: "Optional configuration parameter overrides for agent counts, rounds, or prompts."
+  required:
+    - scenario_name

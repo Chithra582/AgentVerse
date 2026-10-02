@@ -1,0 +1,22 @@
+spec_version: "0.1.0"
+name: "agentverse"
+version: "0.1.8"
+description: "A versatile framework that streamlines the process of creating custom multi-agent environments for large language models (LLMs)."
+author: "OpenBMB AgentVerse Team & OpenGAP Contributors"
+license: "Apache-2.0"
+metadata:
+  domain: "Developer Tools / Multi-Agent Simulation & Autonomous Problem Solving"
+  category: "Developer Tools"
+  framework: "AgentVerse Multi-Agent Simulation & Task-Solving Framework"
+  language: "Python"
+skills:
+  - "multi-agent-environment-simulation"
+  - "dynamic-group-recruitment"
+  - "collaborative-task-solving"
+  - "memory-manipulation-reflection"
+tools:
+  - "environment-step-runner"
+  - "agent-group-coordinator"
+  - "evaluator-feedback-generator"
+  - "memory-buffer-manager"
+  - "simulation-scenario-loader"

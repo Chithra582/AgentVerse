@@ -1,0 +1,24 @@
+name: "agent-group-coordinator"
+description: "Manages agent registration, turn scheduling, message routing, and dynamic group formation."
+input_schema:
+  type: object
+  properties:
+    action:
+      type: string
+      enum:
+        - "register_agent"
+        - "form_group"
+        - "dispatch_turn"
+        - "broadcast_message"
+      description: "Coordination action to execute."
+    agent_id:
+      type: string
+      description: "Identifier of the agent to register or prompt."
+    group_id:
+      type: string
+      description: "Identifier of the target agent collective."
+    message_content:
+      type: string
+      description: "Content of the broadcast or directed message."
+  required:
+    - action
